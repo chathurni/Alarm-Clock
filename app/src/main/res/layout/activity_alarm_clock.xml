@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".AlarmClock">
+
+    <EditText
+        android:id="@+id/etminutes"
+        android:layout_width="96dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#303A75"
+        android:ems="10"
+        android:hint="Minutes"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:textColor="#303A75"
+        android:textColorHint="#303A75"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.272"
+        app:layout_constraintStart_toEndOf="@+id/ethours"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299" />
+
+    <EditText
+        android:id="@+id/ethours"
+        android:layout_width="96dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#303A75"
+        android:ems="10"
+        android:hint="Hour"
+        android:inputType="text"
+        android:paddingLeft="16dp"
+        android:paddingRight="12dp"
+        android:textColor="#303A75"
+        android:textColorHint="#303A75"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299" />
+
+    <Button
+        android:id="@+id/btnTime"
+        android:layout_width="128dp"
+        android:layout_height="36dp"
+        android:background="@drawable/btnbackground"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Set Time"
+        android:textColor="#6EB6EF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnAlarm"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ethours"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <Button
+        android:id="@+id/btnAlarm"
+        android:layout_width="128dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="224dp"
+        android:background="@drawable/btnbackground"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Set Alarm"
+        android:textColor="#6EB6EF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etminutes"
+        app:layout_constraintVertical_bias="0.345" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

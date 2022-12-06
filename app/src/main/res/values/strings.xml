@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Digital Clock</string>
+    <string name="alarm">Alarm</string>
+    <string name="now_time_is">Now time is</string>
+</resources>
